@@ -1,0 +1,21 @@
+(function($) {
+    $(document).ready(function(){
+        // Add a click handler to just these buttons
+        $('h3.list-with-header-block_title').on('click', clickHandler);
+        // Define the clickHandler function, as before
+        function clickHandler(event) {
+            var toggle = function($element) {
+                if ($element.hasClass("active")) { $element.removeClass("active"); }
+                else { $element.addClass("active"); }
+            }
+            toggle($(this).parent());
+            var content = $(this).parent().next();
+            if (content[0].style.maxHeight) {
+                content[0].style.maxHeight = null;
+            } else {
+                content[0].style.maxHeight = content[0].scrollHeight + "px";
+            } 
+            // toggle(content);
+        }
+    });
+})(jQuery);
