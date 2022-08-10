@@ -1,0 +1,1 @@
+CookieConsent.configuration.tags.push({id:28794171,type:"iframe",tagID:"",innerHash:"",outerHash:"-1880902858",tagHash:"15654877201556",url:"https://open.spotify.com/embed/playlist/4b8wpzjf5so8qyu5jmzgwg",resolvedUrl:"https://open.spotify.com/embed/playlist/4b8wpzjf5so8qyu5jmzgwg",cat:[4]});

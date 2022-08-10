@@ -1,0 +1,39 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-cgb-block-list-with-header-block {
+  background: #e7eff5;
+  color: #292929;
+  padding: 1.25em 2.375em;
+  border-radius: 10px; }
+  .wp-block-cgb-block-list-with-header-block + p {
+    margin-top: 1.5em; }
+  .wp-block-cgb-block-list-with-header-block .list-with-header-block_header h3 {
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 0; }
+    .wp-block-cgb-block-list-with-header-block .list-with-header-block_header h3::after {
+      content: '\002B';
+      font-weight: bold;
+      float: right;
+      font-size: 20px; }
+  .wp-block-cgb-block-list-with-header-block .list-with-header-block_header.active h3::after {
+    content: '\2212'; }
+  .wp-block-cgb-block-list-with-header-block .list-with-header-block_list {
+    -webkit-transition: max-height 0.35s ease-out;
+    -o-transition: max-height 0.35s ease-out;
+    transition: max-height 0.35s ease-out;
+    max-height: 0;
+    overflow: hidden; }
+    .wp-block-cgb-block-list-with-header-block .list-with-header-block_list ol {
+      list-style-position: inside;
+      margin: 0.75em 0 0.4em; }
